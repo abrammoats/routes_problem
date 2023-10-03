@@ -1,0 +1,7 @@
+The Routes Problem
+
+Many people are familiar with the "Traveling Salesman" problem, a fairly standard example of a difficult to solve problem in computer science. This project attempts to provide a simple tool that can handle what I imagine a growing delivery business might have to handle, ie the question of how to change delivery routes based on new delivery locations. It might also be applicable to food delivery, grocery delivery, etc or other delivery services that work in a more real-time environment.
+
+The setup is simple. There is a UI in the form of a streamlit app inspired by a Medium article here: On the backend I have a duckdb database (congrats to MotherDuck btw). The database stores delivery locations, which can be added or subtracted by the user. Each time an addition or subtraction is made, the optimal route, which is displayed on a map, is updated.
+
+Unless your use case is hugely simple, this isn't going to be production-ready. This is rather meant to demonstrate facility in using the tooling required to make these calculations in a streamlit-duckdb stack. If you have a list of changes you'd need to see to incorporate this into your workflow, please reach out at abramdanielmoats@gmail.com or comment on the repository.
